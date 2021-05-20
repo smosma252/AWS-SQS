@@ -8,9 +8,7 @@ public class Send {
 
     public static void main(String[] args){
 
-        /*
-            Region Credentials: us-east-2
-         */
+        //Region Credentials: us-east-2
         AmazonSQS sqs = AmazonSQSClientBuilder.standard().build();
 
         //Creates the Queue and captures URL
@@ -26,7 +24,6 @@ public class Send {
             jsonObject.append("Pending Transactions:", 25);
             jsonObject.append("Pending Transactions:", 23);
             jsonObject.append("Pending Transactions:", 98);
-
 
         // Perform various tasks on the Amazon SQS queue
         SendMessageRequest sendMessageRequest = new SendMessageRequest()
